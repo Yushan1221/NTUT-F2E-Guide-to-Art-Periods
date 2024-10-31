@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+    background-color: #869900;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+.container {
+    
+    max-width: 940px; /*固定最大寬度*/
+    margin: 0 auto;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+
+
+.header {
+    color: #617140;
+}
+
+/*容器*/
+.content-area {
+    /*容器指令*/
+    display: flex;
+    /*flex-direction: row; /*排版方向*/
+}
+
+.main-area {
+    width: 66%;
+}
+
+.sidebar {
+    width: 34%;
+}
+
+.footer {
+}
