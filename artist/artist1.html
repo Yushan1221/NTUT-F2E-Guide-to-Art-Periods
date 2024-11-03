@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Art Period</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="javascript/scripts.js" defer></script>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../javascript/scripts.js" defer></script>
 	<!-- 引入 Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -17,7 +17,7 @@
 
         <div class="title-area">
 
-			<div class="Logo">
+			<div class="logo">
 				<img src="./img/img_main_pumpkin.png" alt="Logo">
 			</div>
 
@@ -42,12 +42,78 @@
     </header>
 
 
-    <main class="main-area">
+    <main class="artist-main-area">
 
-
-        <figure class="main-img">
-            <img src="./img/img_main_pumpkin.png" alt="Period Artwork">
+        <!-- 主視覺圖 -->
+        <figure class="artist-artwork-img">
+            <img src="./img/img_main_pumpkin.png" alt="Artist Artwork">
 		</figure>
+
+        <!-- 作品標題 -->
+        <section class="artist-artwork-header">
+            <figure class="artist-portrait"><img src="#" alt="Artist image"></figure>
+            <div>
+                <h2 class="artwork-name">最後的晚餐</h2>
+                <p class="artwork-header-label">1495-1496</p>
+                <p class="artwork-header-location"><a href="https://maps.app.goo.gl/2Ne4qNaqAmM9pstn8" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> 義大利 米蘭  聖瑪利亞感恩修道院  (  Piazza Santa Maria delle Grazie, 2 Milan )</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- 作品資訊 -->
+        <section class="artwork-info">
+            <ul class="artwork-info-list">
+                <li class="list-item">藝術家 : 李奧納多.達.文西</li>
+                <li class="list-item">流派 : 文藝復興時期</li>
+                <li class="list-item">尺寸 : 460 cm × 880 cm（181 in × 346 in）</li>
+            </ul>
+
+            <article class="artwork-description">
+                <h2 class="artwork-description-title">作品介紹</h2>
+                <p class="artwork-description-centent">
+                    高4.6米，寬8.8米，畫面利用透視原理，使觀眾感覺房間隨畫面作了自然延伸。為了構圖使徒坐得比正常就餐的距離更近，並且分成四組，
+                    在耶穌周圍形成波浪狀的層次。越靠近耶穌的門徒越顯得激動。耶穌坐在正中間，他攤開雙手鎮定自若，和周圍緊張的十二門徒形成鮮明的對比。
+                    耶穌背後的門外是祥和的外景，明亮的天空在他頭上彷彿一道光環。他的雙眼注視畫外，仿佛看穿了世間的一切炎涼。最後的晚餐的畫中窗外顯示
+                    是白天，因此被人列為疑點。《最後的晚餐》壁畫取材自基督教聖經馬太福音第26章，描繪耶穌在遭羅馬士兵逮捕的前夕和十二宗徒共進最後一餐
+                    時預言「你們其中一人將出賣我」後，門徒們顯得困惑、哀傷與騷動，紛紛詢問耶穌：「主啊，是我嗎？」的瞬間情景。唯有坐在耶穌右側（即畫面正
+                    方左邊第五位）的叛徒猶達斯（基督新教中文作猶大）驚慌地將身體往後傾，一手抓著出賣耶穌的酬勞——一個裝有三十塊銀幣的錢袋，臉部顯得陰暗。<br><br>
+
+                    據說達文西在繪作此圖時，所有人面孔皆已設想好，惟有加略人猶大未想好。當教堂神父來催達文西時，與其談到此問題，恰好該神父對其主教有點
+                    微詞，聽聞達文西欲用主教之臉當作猶大的臉孔，連聲同意，並開懷大笑。
+                </p>
+            </article>
+        </section>
+
+        <!-- 更多細節 -->
+        <div class="artist-info">
+            <div class="artist-info-place">
+                <p>&bull; 這裡有一些細節.......在此說明</p>
+            </div>
+            <div class="artist-info-place">
+                <p>&bull; 這裡有一些細節.......在此說明</p>
+            </div>
+            <div class="artist-info-place">
+                <p>&bull; 這裡有一些細節.......在此說明</p>
+            </div>
+        </div>
+
+        <!-- 地圖 -->
+        <section class="location">
+            <h2 class="location-title"><a href="https://maps.app.goo.gl/2Ne4qNaqAmM9pstn8" target="_blank">
+                <i class="fas fa-map-marker-alt"></i> 義大利 米蘭  聖瑪利亞感恩修道院  (  Piazza Santa Maria delle Grazie, 2 Milan )</a>
+            </h2>
+
+            <iframe class="location-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.190663689586!2d9.170962099999999!3d45.465962999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c15a44bf1c83%3A0xed5bcdc4d3c75a59!2z5oGp5a-16IGW5q-N!5e0!3m2!1szh-TW!2stw!4v1730637150699!5m2!1szh-TW!2stw" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
 
 
         
@@ -60,7 +126,7 @@
     </footer>
 
 	<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
-
+    
 
 </body>
 
