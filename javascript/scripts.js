@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll("[data-target]").forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault(); // 防止鏈接的默認行為
-            const targetClass = link.getAttribute("data-target");
+            const targetClass = link.dataset.target; // 使用 dataset 獲取值 
             scrollToSection(targetClass);
         });
     });
 });
 
-// 回到頂端
+// 顯示回到頂端按鈕
 window.onscroll = function() {
     const button = document.querySelector('.back-to-top');
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
