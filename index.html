@@ -6,6 +6,7 @@
 	<title>Art Period</title>
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/index.css">
 	<script src="./javascript/scripts.js" defer></script>
 	<!-- 引入 Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -51,13 +52,18 @@
 
 		<!-- 畫家介紹 Hi!! -->
         <section class="home-artist">
-			<div class="home-artist-title">
-				<figure class="home-artist-title-picture"><img src="#" alt="Picture"></figure>
-				<h2 class="home-section-title">Famous<br>Artist</h2>
-				<p>Come meet these legends</p>
-			</div>
+
+			<div class="home-artist-container">
+				<figure class="home-artist-title-picture">
+					<img src="#" alt="Picture">
+				</figure>
+
+				<div class="home-artist-title-text">
+					<h2 class="home-section-title">Famous<br>Artist</h2>
+					<p>Come meet these legends</p>
+				</div>
             
-            <div class="home-artist-container">
+            
                 <div class="home-artist-box">
 					<a href="./artist/artist1.html">
 						<figure class="home-artist-picture"><img src="#" alt="Picture of Leonardo da Vinc"></figure>
@@ -93,20 +99,20 @@
 					<figure class="home-exhibition-picture"><img src="#" alt="Exhibition Picture"></figure>
 					<div class="home-exhibition-info">
 						<h3 class="home-exhibition-name"><a href="./exhibition/exhibition1.html">《梵谷：尋光之路》特展</a></h3>
-						<p class="home-exhibition-date">2024/10/1-2024/11/30</p>
+						<p class="home-exhibition-date">2024/10/1-11/30</p>
 						<p class="home-exhibition-location">富邦美術館 3F日光展廳(台北市信義區松高路79號)</p>
 					</div>
-					<a href="#" class="home-exhibition-botton">了解更多</a>
+					<a href="./exhibition/exhibition1.html" class="home-exhibition-botton"><p>了解更多</p></a>
 				</div>
 
 				<div class="home-exhibition-box">
 					<figure class="home-exhibition-picture"><img src="#" alt="Exhibition Picture"></figure>
 					<div class="home-exhibition-info">
 						<h3 class="home-exhibition-name"><a href="./exhibition/exhibition1.html">《梵谷：尋光之路》特展</a></h3>
-						<p class="home-exhibition-date">2024/10/1-2024/11/30</p>
+						<p class="home-exhibition-date">2024/10/1-11/30</p>
 						<p class="home-exhibition-location">富邦美術館 3F日光展廳(台北市信義區松高路79號)</p>
 					</div>
-					<a href="#" class="home-exhibition-botton">了解更多</a>
+					<a href="./exhibition/exhibition1.html" class="home-exhibition-botton"><p>了解更多</p></a>
 				</div>
 			</div>
         </section>
@@ -131,6 +137,11 @@
 						<p class="home-news-date">2024/10/30</p>
 						<h3 class="home-news-title"><a href="#">問 ChatGPT</a></h3>
 					</div>
+					
+					<div class="home-news-box">
+						<p class="home-news-date">2024/10/30</p>
+						<h3 class="home-news-title"><a href="#">問 ChatGPT</a></h3>
+					</div>
 				</div>
 			</div>
 
@@ -140,7 +151,7 @@
 		</section>
 
 		<!-- 更多資訊 -->
-		<section class="home-more-nfo">
+		<section class="home-more-info">
 			<ul class="home-info-list">
 				<li class="home-info-list-item">
 					<figure class="home-info-icon"><a href="#"><img src="#" alt="Icon"></a></figure>

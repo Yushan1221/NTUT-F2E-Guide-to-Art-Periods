@@ -1,0 +1,363 @@
+/* 首頁 */
+/* .home-main-area {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+} */
+
+/* 主視覺圖 */
+.home-main-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 80rem;
+    height: 90vh;
+    background-color: #aaa;
+    
+}
+
+.home-main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 畫家介紹 */
+.home-artist {
+    gap: 3rem;
+    width: 100%;
+    min-width: 80rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 3rem 10rem;    
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.home-artist-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    gap: 2rem;
+    row-gap: 3.5rem;
+}
+
+
+.home-artist-title-picture {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.home-artist-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    padding-left: 1rem;
+}
+
+.home-section-title {
+    font-size: 40px;
+    line-height: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+.home-artist-title-text p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.home-artist-box {
+    height: 27rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #fff;
+    color:black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
+}
+
+.home-artist-box:hover {
+    transform: scale(1.03); /* 放大效果 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* 增強陰影 */
+}
+
+.home-artist-box a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;  /* 繼承父元素的字體顏色 */
+}
+
+.home-artist-picture {
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 0;
+    margin: 0;
+    background-color: #aaa;
+}
+
+.home-artist-name {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 10px;
+    padding-top: 15px;
+}
+
+.home-artist-lifespan {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* 特展快報 */
+.home-exhibition {
+    gap: 3rem;
+    width: 100%;
+    min-width: 80rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 3rem 10rem;    
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.home-exhibition .home-section-title {
+    margin-bottom: 3rem;
+    letter-spacing: 0.5em;
+}
+
+.home-exhibition-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.home-exhibition-box {
+    flex: 1;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 8rem;
+    gap: 4rem;
+    border-radius: 8px;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.home-exhibition-picture {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #aaa;
+    border-radius: 8px;
+}
+
+.home-exhibition-info {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.home-exhibition-name {
+    margin: 0;
+    padding: 0;
+}
+
+.home-exhibition-name a{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000;
+}
+
+.home-exhibition-date {
+    margin: 0;
+    padding: 8px 6px;
+    background-color: #eee;
+    border: 0.5px solid #dcdcdc;
+    border-radius: 2px;
+    color: #919191;
+}
+
+.home-exhibition-location {
+    margin: 0;
+    padding: 0;
+}
+
+.home-exhibition-botton {
+    flex: 0.4;
+    padding: 15px 20px;
+    margin-top: auto;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    border-radius: 8px;
+
+    /* 動畫 */
+    transition: all 0.5s;
+}
+
+.home-exhibition-botton p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    /* 動畫 */
+    position: relative;
+    transition: 0.5s;
+    &::after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+}
+
+.home-exhibition-botton:hover {
+    /* 動畫 */
+    background-color: #919191;
+}
+
+.home-exhibition-botton:hover p{
+    /* 動畫 */
+    padding-right: 25px;
+    &:after {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.home-exhibition-botton:active {
+    /* 動畫 */
+    background-color: #525252;
+}
+
+
+/* 最新消息 */
+.home-news {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    min-width: 80rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 3rem 10rem;    
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.home-news-container {
+    flex: 1;
+}
+
+.home-news-container .home-section-title {
+    padding-bottom: 4rem;
+    letter-spacing: 0.5em;
+}
+
+.home-news-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home-news-date {
+    padding: 0;
+    margin: 0;
+}
+
+.home-news-title {
+    padding: 0;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.home-news-title a {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.home-news-picture {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    background-color: #aaa;
+}
+
+/* 更多資訊 */
+.home-more-info {
+    width: 100%;
+    min-width: 80rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 10rem;    
+    background-color: #fff;
+}
+
+.home-info-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;        
+    padding: 0;
+}
+
+.home-info-list-item {
+    list-style: none; 
+    margin: 0;        
+    padding: 0;
+}
+
+.home-info-icon {
+    margin: 0;        
+    padding: 0;
+    height: 200px;
+    width: 200px;
+    border-radius: 70px;
+    background-color: #aaa;
+}
+
+.home-info-title {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.home-info-title a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24;
+    font-weight: 700;
+}
