@@ -318,8 +318,6 @@ body {
     padding: 0; 
     margin: 0;
     width: 750px;
-    background-color: #e3e3e3;
-
 }
 
 .exhibition-features-title{
@@ -389,7 +387,12 @@ body {
 }
 
 .exhibition-description{
-
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
 }
 
 .exhibition-description-title{
@@ -401,10 +404,160 @@ body {
 }
 
 .exhibition-description-content{
+    height: auto;
+    width: 750px;
     font-size: 16px; 
     font-family: 'Noto Sans TC',sans-serif !important;
-    font-weight: 700;
+    font-weight: 500;
+    line-height:2em;
     padding: 0; 
     margin: 0;
 
+}
+
+.exhibition-description-content strong {
+    font-size: 16px; 
+    font-family: 'Noto Sans TC',sans-serif !important;
+    font-weight: 700;
+    line-height:2em;
+    padding: 0; 
+    margin: 0;
+}
+
+.exhibition-comment {
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    font-family: 'Noto Sans TC', sans-serif !important;
+}
+
+.exhibition-comment-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.exhibition-comment-title strong { 
+    color: #cccccc;
+    font-weight: 600;
+}
+
+.exhibition-comment-stars {
+    display: flex;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.exhibition-comment-all {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 43px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.exhibition-comment-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.exhibition-comment-box {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+
+.exhibition-comment-boxTOP{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exhibition-comment-headshot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: flex;
+
+}
+.exhibition-comment-headshot img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.exhibition-comment-name {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.exhibition-comment-content {
+    font-size: 16px;
+    overflow: hidden;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 初始行數限制為 2 行 */
+    -webkit-box-orient: vertical;
+}
+
+.show-more-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+}
+
+.exhibition-comment-box .exhibition-comment-stars {
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.location{
+    height: auto;
+    width: 100%;
+    margin: 60px 0 ;
+}
+
+.location-title a {
+    font-size: 16px; 
+    font-family: 'Noto Sans TC', sans-serif !important;
+    font-weight: 500; 
+    color: #000000 ; 
+    text-decoration: none ;
+    padding: 0; 
+    margin: 0;    
+}
+
+.location-map{
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
 }

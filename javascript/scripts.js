@@ -29,3 +29,27 @@ window.onscroll = function() {
         button.style.display = "none"; // 隱藏按鈕
     }
 };
+
+//點開評論
+document.querySelectorAll('.exhibition-comment-box').forEach(box => {
+    const content = box.querySelector('.exhibition-comment-content');
+    const showMoreBtn = document.createElement('button');
+    showMoreBtn.classList.add('show-more-btn');
+    showMoreBtn.textContent = '查看更多';
+    
+    box.appendChild(showMoreBtn);
+
+    showMoreBtn.addEventListener('click', () => {
+        if (box.classList.contains('expanded')) {
+            box.classList.remove('expanded');
+            content.style.display = '-webkit-box'; // 回到多行限制模式
+            content.style.webkitLineClamp = '2'; // 限制行數為兩行
+            showMoreBtn.textContent = '查看更多';
+        } else {
+            box.classList.add('expanded');
+            content.style.display = 'block'; // 設為 block 顯示所有內容
+            content.style.webkitLineClamp = 'unset'; // 解除行數限制
+            showMoreBtn.textContent = '查看更少';
+        }
+    });
+});
