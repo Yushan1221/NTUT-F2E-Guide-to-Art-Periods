@@ -13,7 +13,7 @@
     width: 100%;
     min-width: 80rem;
     height: 90vh;
-    background-color: #aaa;
+    background-color: #982B1C;
     
 }
 
@@ -41,14 +41,14 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 2fr;
     gap: 2rem;
-    row-gap: 3.5rem;
+    row-gap: 2rem;
 }
 
 
 .home-artist-title-picture {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: #eee;
+    background-color: #982B1C;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -74,6 +74,8 @@ img {
     font-size: 16px;
     padding: 0;
     margin: 0;
+    color: #9c9267;
+    font-weight: 500;
 }
 
 
@@ -96,7 +98,7 @@ img {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: inherit;  /* 繼承父元素的字體顏色 */
+    color: #000;  /* 繼承父元素的字體顏色 */
 }
 
 .home-artist-picture {
@@ -106,7 +108,7 @@ img {
     border-top-right-radius: 6px;
     padding: 0;
     margin: 0;
-    background-color: #aaa;
+    background-color: #DAD4B5;
 }
 
 .home-artist-picture img {
@@ -226,7 +228,7 @@ img {
     flex: 0.4;
     padding: 15px 20px;
     margin-top: auto;
-    background-color: #000;
+    background-color: #982B1C;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
@@ -261,7 +263,7 @@ img {
 
 .home-exhibition-botton:hover {
     /* 動畫 */
-    background-color: #919191;
+    background-color: #9c9267;
 }
 
 .home-exhibition-botton:hover p{
@@ -275,7 +277,7 @@ img {
 
 .home-exhibition-botton:active {
     /* 動畫 */
-    background-color: #525252;
+    background-color: #800000;
 }
 
 
