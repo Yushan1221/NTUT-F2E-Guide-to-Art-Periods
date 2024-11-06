@@ -17,7 +17,7 @@
     
 }
 
-.home-main-img img {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -106,6 +106,11 @@
     padding: 0;
     margin: 0;
     background-color: #aaa;
+}
+
+.home-artist-picture img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .home-artist-name {
@@ -228,6 +233,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    text-wrap: nowrap;
 
     /* 動畫 */
     position: relative;
@@ -315,7 +321,14 @@
     padding: 0;
     border-radius: 8px;
     background-color: #aaa;
+    max-height: 600px;
 }
+
+.home-news-picture img {
+    border-radius: 8px;
+}
+
+
 
 /* 更多資訊 */
 .home-more-info {
@@ -348,6 +361,10 @@
     width: 200px;
     border-radius: 70px;
     background-color: #aaa;
+}
+
+.home-info-icon img {
+    border-radius: 70px;
 }
 
 .home-info-title {
