@@ -50,11 +50,13 @@ h2 {
     width: 40px;
     white-space: nowrap;
     border-radius: 50%;
-    background-color: #800000;
+    
 }
 
 .logo img {
     object-fit: cover;
+    height: 40px;
+    width: 40px;
 }
 
 
