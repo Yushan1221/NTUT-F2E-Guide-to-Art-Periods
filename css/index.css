@@ -1,20 +1,17 @@
 /* 首頁 */
-/* .home-main-area {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-} */
+section {
+    border: none;
+}
 
 /* 主視覺圖 */
 .home-main-img {
+    position: relative;
+    z-index: 0;
     margin: 0;
     padding: 0;
     width: 100%;
-    min-width: 80rem;
-    height: 90vh;
-    background-color: #982B1C;
-    
+    height: 100vh;
+    background-color: #982B1C;   
 }
 
 img {
@@ -25,66 +22,57 @@ img {
 
 
 /* 畫家介紹 */
+.home-artist-guideBar {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-color: #fff;
+    height: 10vh;
+    border-radius: 0 30px 0 0;
+    border: none;
+}
+
+
 .home-artist {
-    gap: 3rem;
-    width: 100%;
-    min-width: 80rem;
+    width: 80%;
     height: auto;
     margin: 0 auto;
-    padding: 3rem 10rem;    
+    margin-bottom: 10vh;   
     background-color: #fff;
-    border-bottom: 1px solid #eee;
 }
 
 .home-artist-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr;
-    gap: 2rem;
-    row-gap: 2rem;
-}
-
-
-.home-artist-title-picture {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #982B1C;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 180px;
-}
-
-.home-artist-title-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem 0;
-    padding-left: 1rem;
+    margin: 20px auto;
 }
 
 .home-section-title {
     font-size: 40px;
     line-height: 48px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     padding: 0;
     margin: 0;
+    margin-left: 1vw;
 }
 
 .home-artist-title-text p {
     font-size: 16px;
-    padding: 0;
+    padding: 1vw 0;
     margin: 0;
+    margin-left: 1vw;
     color: #9c9267;
     font-weight: 500;
+    letter-spacing: 0.42em;
 }
 
-
 .home-artist-box {
-    height: 27rem;
+    position: relative;
+    height: 60vh;
     border: 1px solid #eee;
     border-radius: 6px;
     background-color: #fff;
     color:black;
+    margin: 1vh 1vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
 }
@@ -94,6 +82,7 @@ img {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* 增強陰影 */
 }
 
+
 .home-artist-box a {
     width: 100%;
     height: 100%;
@@ -102,292 +91,370 @@ img {
 }
 
 .home-artist-picture {
-    height: 80%;
+    height: 100%;
     width: 100%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-radius: 6px;
     padding: 0;
     margin: 0;
     background-color: #DAD4B5;
 }
 
 .home-artist-picture img {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .home-artist-name {
-    font-size: 16px;
-    font-weight: 400;
+    position: absolute;
+    left: 1vw;
+    bottom: 4vh;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin: 0;
-    padding: 0 10px;
-    padding-top: 15px;
+    margin-left: 0.5em;
+    color: #fff;
+    width: 20vw;
+    white-space: nowrap;
+    overflow: hidden; /* 超出範圍的內容隱藏 */
+    text-overflow: ellipsis; /* 使用簡略號表示超出部分 */
 }
 
 .home-artist-lifespan {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-    padding: 10px;
+    position: absolute;
+    left: 1vw;
+    bottom: 7vh;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 2vh 0;
+    color: #fff;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: none; /* 移除預設的箭頭樣式 */
+}
+
+.slick-prev, .slick-next {
+    color: #CBC191 !important; /* 調整箭頭顏色 */
+    font-size: 4rem;
+    z-index: 2;
+    transition: all 0.33s;
+}
+
+.slick-next {
+    left: 100%;
+}
+
+.slick-prev {
+    left: -5%;
+}
+
+.slick-prev:hover {
+    color: #9c9267 !important;
+    left: -7%;
+}
+
+.slick-next:hover {
+    color: #9c9267 !important;
+    left: 102%;
+}
+
+.slick-dots li button:before {
+    color: #800000 !important; /* 調整圓點顏色 */
+    font-size: 0.7rem;
+}
+
+.slick-dots {
+    bottom: -5vh; /* 調整點點與內容的距離 */
 }
 
 
 /* 特展快報 */
 .home-exhibition {
-    gap: 3rem;
+    position: relative;
     width: 100%;
-    min-width: 80rem;
     height: auto;
     margin: 0 auto;
-    padding: 3rem 10rem;    
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+    
+    /* padding: 3rem 10rem;     */
+    background-color: #800000;
+}
+
+.home-exhibition-Pillar {
+    position: absolute;
+    height: 100%;
+    z-index: 3;
+}
+
+.Pillar-left {
+    left: 0px;
+}
+
+.Pillar-right {
+    right: 0px;
 }
 
 .home-exhibition .home-section-title {
-    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 0.5em;
+    color: #fff;
+    padding-top: 10vh;
+}
+
+.home-section-text {
+    text-align: center;
+    margin: 2vh 0;
+    letter-spacing: 0.5em;
+    color: #9c9267;
 }
 
 .home-exhibition-container {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+    margin: 20px auto;
+    width: 80%;
+    padding-bottom: 10vh;
+}
+
+@media (max-width: 768px) {
+    .home-exhibition-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-exhibition-container {
+        width: 50%;
+    }
 }
 
 .home-exhibition-box {
-    flex: 1;   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 8rem;
-    gap: 4rem;
-    border-radius: 8px;
+    position: relative;
+    height: 80vh;
+    border-radius: 300px 300px 30px 30px;
+    background-color: #fff;
+    color: #9c9267;
+    margin: 5vh 1vw 10vh 1vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     
     /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .home-exhibition-picture {
-    flex: 1;
-    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 300px 300px 30px 30px;
     padding: 0;
-    background-color: #aaa;
-    border-radius: 8px;
-    height: 112px;
+    margin: 0;
+    background-color: #DAD4B5;
 }
 .home-exhibition-picture img {
-    flex: 1;
-    margin: 0;
-    padding: 0;
-    background-color: #aaa;
-    border-radius: 8px;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 .home-exhibition-info {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    width: 18rem;
+    opacity: 0;
+    z-index: 2;
+}
+
+.home-exhibition-box::after {
+    content: ''; /* 偽元素必須設置 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #800000; /* 覆蓋色 */
+    opacity: 0; /* 初始透明，等於看不到 */
+    transition: opacity 0.3s ease; /* 動畫效果 */
+    z-index: 1; /* 確保覆蓋在文字上 */
+    pointer-events: none; /* 偽元素不影響滑鼠操作 */
+}
+  
+.home-exhibition-box:hover::after {
+    opacity: 0.71; /* 等於 #800000B5 的透明度 */
+}
+
+.home-exhibition-box:hover .home-exhibition-info {
+    opacity: 1;
 }
 
 .home-exhibition-name {
-    margin: 0;
-    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
-.home-exhibition-name a{
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    line-height: 32px;
-    text-decoration: none;
-    color: #000;
-}
 
 .home-exhibition-date {
-    margin: 0;
-    padding: 8px 6px;
-    background-color: #eee;
-    border: 0.5px solid #dcdcdc;
-    border-radius: 2px;
-    color: #919191;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .home-exhibition-location {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .home-exhibition-botton {
-    flex: 0.4;
-    padding: 15px 20px;
-    margin-top: auto;
-    background-color: #982B1C;
-    color: #fff;
+    display: block;
+    height: 100%;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    height: 48px;
-    letter-spacing: 0.5em;
-    text-align: center;
-    border-radius: 8px;
+    border-radius: 300px 300px 30px 30px;
 
-    /* 動畫 */
-    transition: all 0.5s;
 }
 
-.home-exhibition-botton p {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    text-wrap: nowrap;
-
-    /* 動畫 */
-    position: relative;
-    transition: 0.5s;
-    &::after {
-        content: '»';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-    }
+.home-exhibition-container .slick-dots li button:before {
+    color: #CBC191 !important; /* 調整圓點顏色 */
+    font-size: 0.7rem;
 }
 
-.home-exhibition-botton:hover {
-    /* 動畫 */
-    background-color: #9c9267;
-}
-
-.home-exhibition-botton:hover p{
-    /* 動畫 */
-    padding-right: 25px;
-    &:after {
-        opacity: 1;
-        right: 0;
-    }
-}
-
-.home-exhibition-botton:active {
-    /* 動畫 */
-    background-color: #800000;
+.home-exhibition-container .slick-dots {
+    bottom: 10vh; /* 調整點點與內容的距離 */
 }
 
 
 /* 最新消息 */
 .home-news {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
     width: 100%;
-    min-width: 80rem;
     height: auto;
     margin: 0 auto;
-    padding: 3rem 10rem;    
+    padding: 3vh 5vw;    
     background-color: #fff;
-    border-bottom: 1px solid #eee;
 }
 
-.home-news-container {
-    flex: 1;
-}
 
-.home-news-container .home-section-title {
-    padding-bottom: 4rem;
+.home-news .home-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 0.5em;
+    padding-top: 8vh;
+}
+
+.home-news p {
+    text-align: center;
+    margin: 2vh 0;
+    letter-spacing: 0.5em;
+    color: #9c9267;
 }
 
 .home-news-info {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.home-news-date {
-    padding: 0;
-    margin: 0;
-}
-
-.home-news-title {
-    padding: 0;
-    margin: 0;
-    padding-top: 1rem;
-}
-
-.home-news-title a {
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #000;
-}
-
-.home-news-picture {
-    flex: 1;
-    margin: 0;
-    padding: 0;
-    border-radius: 8px;
-    background-color: #aaa;
-    max-height: 600px;
-}
-
-.home-news-picture img {
-    border-radius: 8px;
-}
-
-
-
-/* 更多資訊 */
-.home-more-info {
-    width: 100%;
-    min-width: 80rem;
-    height: auto;
-    margin: 0 auto;
-    padding: 4rem 10rem;    
-    background-color: #fff;
-}
-
-.home-info-list {
-    display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin: 0;        
     padding: 0;
 }
 
-.home-info-list-item {
-    list-style: none; 
-    margin: 0;        
+.home-news-box {
+    position: relative;
+    margin: 0;
     padding: 0;
 }
 
-.home-info-icon {
-    margin: 0;        
-    padding: 0;
-    height: 200px;
-    width: 200px;
-    border-radius: 70px;
-    background-color: #aaa;
+.home-news-image {
+    display: block;
+    position: relative;
+    height: 30vh;
+    border-radius: 30px;
+    margin: 1vw;
 }
 
-.home-info-icon img {
-    border-radius: 70px;
+/* 圖片漸層變暗 */
+.home-news-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    pointer-events: none; /* 確保不影響點擊操作 */
 }
 
-.home-info-title {
-    text-align: center;
-    margin: 2rem auto;
+.home-news-image img {
+    display: block;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
-.home-info-title a {
-    text-decoration: none;
-    color: #000;
-    font-size: 24;
+.home-news-title {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.home-news-title a {
+    font-size: 1.2rem;
     font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.home-news-link-box {
+    position: relative;
+    left: -90%;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 0;
+    padding-right: 10vw;
+    margin-bottom: 5vh;
+    transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+.home-news-link-box.show {
+    left: 0; /* 恢复到原位 */
+    opacity: 1;
+}
+
+.home-news-dash {
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    border-top: 1px solid #800000;;
+}
+
+
+.home-news-link a {
+    text-decoration: none;
+    color: #800000;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto 0;
+}
+
+p {
+    margin: auto 0;
+}
+
+@media (max-width: 768px) {
+    .home-news-link a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-news-link a {
+        font-size: 1rem;
+    }
+
+    .home-news-dash {
+        width: 55vw;
+    }
 }
