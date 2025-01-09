@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SPATIUM Art</title>
+
+	<!-- 引入 Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+	<!-- 引入 Bootstrap -->
+	<script src="../js/bootstrap.bundle.min.js" defer></script>
+	<link rel="stylesheet" href="../js/bootstrap.min.css" defer>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/exhibition.css">
+	<script src="../js/scripts.js" defer></script>
+    <!-- 引入Roboto 字體 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="exhibition-page">
+
+	<header class="header">
+		<div class="title-area">
+			<div class="logo">
+				<img src="../image/LOGO-01.png" alt="Logo">
+			</div>
+			<h1 class="header-title">SPATIUM</h1>
+		</div>
+
+		<nav class="nav">
+			<!-- 漢堡選單 -->
+			<button class="hamburger-menu" id="hamburger-btn">
+				<svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+					<path
+						  class="line top"
+						  d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+					<path
+						  class="line middle"
+						  d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+					<path
+						  class="line bottom"
+						  d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+				</svg>
+			</button>
+
+			<div class="menu-container" id="menu-container">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Paintings</a></li>
+					<li class="nav-item"><a href="../index.html#artist" class="nav-link">Artist</a></li>
+					<li class="nav-item"><a href="../index.html#exhibition" class="nav-link">Exhibitions</a></li>
+				</ul>
+	
+				<div class="search-container">
+					<input type="text" placeholder="Search in site" class="search-input">
+					<!-- <i>用來插入 Font Awesome 的圖標 -->
+					<button class="search-button"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
+		</nav>
+    </header>
+
+    <main class="exhibition-main-area container-fluid">
+
+        <!-- 展覽標題 -->
+        <section class="exhibition-header row">
+           <div class="exhibition-text col-12">
+              <h2 class="exhibition-header-title">《梵谷：尋光之路》特展</h2>
+              <p class="header-label">熱賣中</p>
+              <p class="header-location"><i class="fas fa-calendar"></i> 2024年12月27日(週五) - 2025年3月9日(週日)</p>
+              <p class="header-location"><a href="https://reurl.cc/1bykk9" target="_blank">
+                  <i class="fas fa-map-marker-alt"></i> 富邦美術館  3F日光展廳</a>
+              </p>
+           </div>
+            <figure class="exhibition-image col-12"><img src="../image/梵谷尋光之路展 copy.webp" alt="Exhibition Image"></figure>
+        </section>
+
+        <div class="exhibition-text-container row">
+
+            <!-- 展覽介紹 -->
+            <section class="exhibition-description col-12 col-lg-8">
+                <h2 class="exhibition-description-title">展覽介紹</h2>
+                <p class="exhibition-description-content">
+                    <b> 世界級規格展出．藝術史上最絢麗奔放的色彩！ </b> <br><br>
+
+                    來自荷蘭、全球最多梵谷收藏的美術館之一，庫勒穆勒美術館真跡畫作來台，2023年梵谷誕生170周年，
+                    珍稀畫作開始在世界各地巡迴，2024年8月首度於富邦美術館盛大展出，全新空間呈現絕美藝術饗宴！ 本展一次展出自畫像及人物素描習作，以及1888
+                    年前往亞爾後，風格逐漸成熟的25件珍稀作品，隨著荷蘭畫家文森．威廉．梵谷（Vincent Willem van Gogh）繪畫創作的足跡，踏上尋光的旅程。<br>
+                    2024必訪《梵谷：尋光之路》特展，不僅是一場藝術盛宴，更是一場心靈的旅行，一定要來到畫作前，親眼一睹後印象派大師的真跡風采，看見梵谷創作
+                    的初心，感受豐沛的繪畫能量，以及動人筆觸下的光輝色彩，發掘你所不知道的梵谷！<br><br>
+
+                    <strong>關於庫勒穆勒美術館</strong><br>
+                    庫勒穆勒美術館位於荷蘭最大的國家公園，由海倫·庫勒-穆勒 (Helene Kröller-Müller)創立，她是最早肯定梵谷的才華並收藏他作品的人之一，而
+                    梵谷僅是她狂熱收藏的一部分。1935年，她將收藏品捐贈給荷蘭政府，1938年博物館對外開放，知名館藏包含《夜晚露天咖啡座》、《梵谷自畫像》、
+                    《日落時柳樹》等。<br><br>
+                    <strong>關於富邦美術館</strong><br>
+                    座落於台北市信義區富邦A25園區，佔地3,000坪，由國際知名建築大師、普立茲克建築獎得主倫佐．皮亞諾及其工作室（Renzo Piano Building Works
+                    hop，簡稱RPBW）打造，他的代表作包括巴黎龐畢度藝術中心、紐約時報大廈等，富邦美術館為其在台灣的首件設計作品，於2024年5月正式開幕。
+                </p>
+            </section>
+
+            <!-- 展覽特色跟訂票 -->
+            <div class="exhibition-features-booking col-12 col-lg-4">
+                <!-- <section class="exhibition-features">
+                    <h2 class="exhibition-features-title">展覽特色</h2>
+                    <ul class="exhibition-features-list">
+                        <li class="exhibition-features-list-item">來自荷蘭真跡畫作，珍稀大公開</li>
+                        <li class="exhibition-features-list-item">富邦美術館，全新空間藝術饗宴</li>
+                        <li class="exhibition-features-list-item">梵谷尋光之路，名畫場景互動體驗</li>
+                        <li class="exhibition-features-list-item">限量名畫紀念品，必收藏限定周邊</li>
+                    </ul>
+                </section> -->
+
+                <section class="exhibition-booking">
+                    <p class="exhibition-booking-price">NT$ 500</p>
+                    <a href="https://www.kkday.com/zh-tw/product/181803-taipei-van-gogh-journey-of-light-exhibition" class="exhibition-booking-botton">立即訂票</a>
+                </section>
+            </div>
+
+        </div>
+
+        
+     
+        <!-- 評論 -->
+        <section class="exhibition-comment">
+            <h2 class="exhibition-comment-title">評論&nbsp;&nbsp;&nbsp;<span>4.9<strong>/5</strong></span></h2>
+            <h3 class="exhibition-comment-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </h3>
+            
+            <a href="#" class="exhibition-comment-all">查看全部評論&nbsp;>&nbsp;></a>
+            <div class="exhibition-comment-container">
+                <div class="exhibition-comment-box">
+                   <div class="exhibition-comment-boxTOP">
+                      <figure class="exhibition-comment-headshot"><img src="../image/頭像2.jpg" alt="headshot"></figure>
+                      <p class="exhibition-comment-name">孔子</p>
+                      <div class="exhibition-comment-stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <p class="exhibition-comment-content">先在一樓檢驗包包（像是機場過安檢那樣。 <br>然後才能進場，接著搭電梯的三樓看梵谷，到三樓會在排隊，有控管人數
+                        所以看展體驗是很棒的，雖然作品展示不多，每幅畫可以舒適的欣賞 而且可以拍照，地上有界線不能越界，仍是可以離作品很近的觀看 <br>還有拍照區可以拍照
+                        留下紀念，雖然沒有明確畫出排隊列伍，但好險來看展的人素質不錯，離場前可以蓋手章再次排隊進場，印製的字是梵谷！很值得拍照留紀念，紀念品區蠻多元的 
+                        很好買，價格從親民到高檔的都有，填寫問卷加賴可以拿梵谷的質感貼紙，服務人員都很親切 不會很兇，冷氣涼爽，空氣清晰，空間寬敞，建議提前網路購票 
+                        前幾天在Klook 買的，刷qrcode 之後可以拿到實體票！ 也能省下現場排隊購票時間。</p>
+                </div>
+                <div class="exhibition-comment-box">
+                    <div class="exhibition-comment-boxTOP">
+                       <figure class="exhibition-comment-headshot"><img src="../image/頭像1.jpg" alt="headshot"></figure>
+                       <p class="exhibition-comment-name">曾得維</p>
+                       <div class="exhibition-comment-stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                    </div>
+                     <p class="exhibition-comment-content">展區以梵谷人生時間軸為主體，透過不同時期的繪畫作品，感受作者心境上的變化。作為一個全新美術館，富邦美術館從頭到尾都讓人感到新鮮，裝潢氣派、展區寬敞、環境舒適，但建議選擇平日前往，避開人潮，可以省下不少時間，也比較可以享受到愜意的賞析節奏。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 地圖 -->
+        <section class="location">
+            <h2 class="location-title"><a href="https://reurl.cc/1bykk9" target="_blank">
+                <i class="fas fa-map-marker-alt"></i> 富邦美術館  3F日光展廳  ( 110台北市信義區松高路79號 )</a>
+            </h2>
+
+            <iframe class="location-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.843493324675!2d121.568630475062!3d25.03938483807517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbb7743f0b3%3A0xc2bfffb36b96f5f3!2z5a-M6YKm576O6KGT6aSo!5e0!3m2!1szh-TW!2stw!4v1730645491166!5m2!1szh-TW!2stw" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        
+    </main>
+
+    <!-- 展覽消息 -->
+    <section class="home-exhibition">
+
+        <h2 class="home-section-title">你可能感興趣...</h2>
+
+        
+        <div class="home-exhibition-container">
+            <div class="home-exhibition-box">
+                <a href="./exhibition/exhibition1.html" class="home-exhibition-botton">
+                    <img class="home-exhibition-picture" src="../image/畫師們特展.jpg" alt="Exhibition Picture">
+                    <div class="home-exhibition-info">
+                        <h3 class="home-exhibition-name">畫師們：走進16、17世紀 <br>尼德蘭繪畫時代</h3>
+                        <p class="home-exhibition-date">2024/10/26-2025/08/31</p>
+                    </div>
+                </a>
+            </div>
+            <div class="home-exhibition-box">
+                <a href="./exhibition/exhibition1.html" class="home-exhibition-botton">
+                    <img class="home-exhibition-picture" src="../image/AI會動的畫.jpg" alt="Exhibition Picture">
+                    <div class="home-exhibition-info">
+                        <h3 class="home-exhibition-name">AI繪動的畫 特展</h3>
+                        <p class="home-exhibition-date">2024/11/27-2025/03/09</p>
+                    </div>
+                </a>
+            </div>
+            <div class="home-exhibition-box">
+                <a href="./exhibition/exhibition2.html" class="home-exhibition-botton">
+                    <img class="home-exhibition-picture" src="../image/梵谷尋光之路展.webp" alt="Exhibition Picture">
+                    <div class="home-exhibition-info">
+                        <h3 class="home-exhibition-name">《梵谷：尋光之路》特展</h3>
+                        <p class="home-exhibition-date">2024/10/1-11/30</p>
+                    </div>
+                </a>
+            </div>
+            <div class="home-exhibition-box">
+                <a href="./exhibition/exhibition1.html" class="home-exhibition-botton">
+                    <img class="home-exhibition-picture" src="../image/共動.jpg" alt="Exhibition Picture">
+                    <div class="home-exhibition-info">
+                        <h3 class="home-exhibition-name">共動｜双方藝廊聯展</h3>
+                        <p class="home-exhibition-date">2024/12/7-2025/01/24</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+		<!-- 更多資訊 -->
+		<section class="home-more-info container">
+			<ul class="home-info-list row">
+				<li class="home-info-list-item col-6 col-md-3">
+					<a class="home-info-icon" href="#"><img src="../image/info_icon_1.jpg" alt="Icon"></a>
+					<h3 class="home-info-title"><a href="#">更多展覽</a></h3>
+				</li>
+
+				<li class="home-info-list-item col-6 col-md-3">
+					<figure class="home-info-icon"><a href="#"><img src="../image/info_icon_2.jpg" alt="Icon"></a></figure>
+					<h3 class="home-info-title"><a href="#">認識畫家</a></h3>
+				</li>
+
+				<li class="home-info-list-item col-6 col-md-3">
+					<figure class="home-info-icon"><a href="#"><img src="../image/info_icon_3.jpg" alt="Icon"></a></figure>
+					<h3 class="home-info-title"><a href="#">名畫藝廊</a></h3>
+				</li>
+
+				<li class="home-info-list-item col-6 col-md-3">
+					<figure class="home-info-icon"><a href="#"><img src="../image/info_icon_4.png" alt="Icon"></a></figure>
+					<h3 class="home-info-title"><a href="#">常見問題</a></h3>
+				</li>
+			</ul>
+		</section>
+
+		<div class="footer-copyright container">
+			<div class="row">
+			  <div class="footer-text col-12 col-md-6">
+				<p class="">&copy; Copyrights Guide to Art Period</p>
+			  </div>
+			  <div class="footer-text col-12 col-md-6">
+				<p class="">Contact Us: popopopoponnnn.com</p>
+			  </div>
+			</div>
+			  
+		</div>
+		  
+    </footer>
+
+	<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+    
+
+    <div class="background-image"></div>
+
+
+</body>
+
+</html>
