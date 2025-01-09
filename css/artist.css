@@ -1,14 +1,35 @@
 
 /* 主視覺圖 */
+.box {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #0f0f0f;
+    color: #f4f0e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.artist-main-img{
+    height: 70vh;
+    background-image: url("../image/最後的晚餐.jpg"); /* 圖片路徑 */
+    position: relative;
+}
 
 .artist-artwork-img {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-width: 80rem;
-    height: 90vh;
+    height: 70vh;
     background-color: #982B1C;
-    
 }
 
 img {
@@ -17,19 +38,37 @@ img {
     object-fit: cover;
 }
 
+.artist-text {
+    position: absolute;
+    bottom: 7vh;
+    left: 10vw;
+}
+
+.artist-lebel {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3vh 0;
+}
+
+.artist-artwork-img-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 
 /* 作品標題 */
 .artist-artwork-header {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    width: 100%;
-    min-width: 80rem;
     height: auto;
     margin: 0 auto;
-    padding: 3rem 10rem;    
+    padding: 10vh 10vw;    
     background-color: #fff;
     border-bottom: 1px solid #eee;
+}
+
+.artwork-title {
+    padding: 5vh 0;
 }
 
 .artist-portrait {
@@ -54,8 +93,9 @@ img {
 }
 
 .artwork-name {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
+    font-weight: 700;
     padding: 0;
     margin: 0;
     color: #000;
@@ -89,12 +129,24 @@ img {
 
 
 /* 作品資訊 */
+.artwork-description-1 {
+    background-image: url("../image/最後的晚餐.jpg");
+    height: 100vh;
+    position: relative;
+}
+
+.artwork-description-2 {
+    background-image: url("../image/最後的晚餐.jpg");
+    height: 100vh;
+    position: relative;
+}
+
+
 .artwork-info {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     width: 100%;
-    min-width: 80rem;
     height: auto;
     margin: 0 auto;
     padding: 3rem 10rem;    
@@ -109,16 +161,30 @@ img {
     justify-content: space-evenly;
     border: 1px solid #DAD4B5;
     border-radius: 33px;
-    padding: 1em 5em;
+    padding: 3vh 3vw;
     /* background-color: #F2E8C6; */
 }
 
 .artwork-list-item {
-    padding: 0.5em 0;
-    font-size: 24px;
+    padding: 0.5em ;
+    font-size: 1.5rem;
     font-weight: 700;
+    margin-left: 2em;
 }
 
+@media (max-width: 576px) {
+    
+}
+
+.artwork-description-centent {
+    position: absolute;
+    color: #fff;
+    bottom: 15vh;
+    left: 10vw;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-right: 5vw;
+}
 
 .artwork-description-title {
     font-size: 40px;
@@ -129,22 +195,12 @@ img {
     letter-spacing: 0.5em;
 }
 
-.artwork-description-centent {
-    font-size: 24px;
-    line-height: 1.6;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    color: #333;
-    text-align: justify; /* 兩端對齊增加整齊感 */
-}
-
 /* 圖片打底區 */
 .artist-info {
     display: grid;
     grid-template-columns: 1fr; /* 預設單欄 */
     gap: 2rem;
     padding: 3rem 0;
-    min-width: 80rem;
 }
 
 .artist-info img {
@@ -187,10 +243,14 @@ img {
 /* 地圖 */
 .location {
     width: 100%;
-    min-width: 80rem;
     height: auto;
     margin: 0 auto;
-    padding: 3rem 10rem;    
+    padding: 10vh 10vw;    
     background-color: #fff;
-    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 576px) {
+    .artist-artwork-header, .location {
+        padding: 10vh 3vw; 
+    }
 }

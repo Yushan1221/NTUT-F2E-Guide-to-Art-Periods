@@ -3,93 +3,116 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SPATIUM Art</title>
-	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/artist.css">
-	<!-- 引入 Bootstrap -->
-	<script src="../js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<!-- 引入 D3, jQuery -->
-	<script src="../js/d3.v3.min.js"></script>
-	<script src="../js/jquery-3.6.0.min.js"></script>
 
 	<!-- 引入 Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+	<!-- 引入 Bootstrap -->
+	<script src="../js/bootstrap.bundle.min.js" defer></script>
+	<link rel="stylesheet" href="../js/bootstrap.min.css" defer>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/artist.css">
+	<script src="../js/scripts.js" defer></script>
+
 </head>
 
 <body class="artist-page">
 
 	<header class="header">
-
-        <div class="title-area">
-
+		<div class="title-area">
 			<div class="logo">
 				<img src="../image/LOGO-01.png" alt="Logo">
 			</div>
+			<h1 class="header-title">SPATIUM</h1>
+		</div>
 
-            <h1 class="header-title">SPATIUM</h1>
+		<nav class="nav">
+			<!-- 漢堡選單 -->
+			<button class="hamburger-menu" id="hamburger-btn">
+				<svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+					<path
+						  class="line top"
+						  d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+					<path
+						  class="line middle"
+						  d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+					<path
+						  class="line bottom"
+						  d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+				</svg>
+			</button>
 
-			<nav class="nav">
+			<div class="menu-container" id="menu-container">
 				<ul class="nav-list">
 					<li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Paintings</a></li>
 					<li class="nav-item"><a href="../index.html#artist" class="nav-link">Artist</a></li>
 					<li class="nav-item"><a href="../index.html#exhibition" class="nav-link">Exhibitions</a></li>
 				</ul>
-			</nav>
-
-			<div class="search-container">
-				<input type="text" placeholder="Search in site" class="search-input">
-				<!-- <i>用來插入 Font Awesome 的圖標 -->
-				<button class="search-button"><i class="fas fa-search"></i></button>
+	
+				<div class="search-container">
+					<input type="text" placeholder="Search in site" class="search-input">
+					<!-- <i>用來插入 Font Awesome 的圖標 -->
+					<button class="search-button"><i class="fas fa-search"></i></button>
+				</div>
 			</div>
-        </div>
-
+		</nav>
     </header>
 
 
-    <main class="artist-main-area">
+    <main class="artist-main-area container-fluid">
 
         <!-- 主視覺圖 -->
-        <figure class="artist-artwork-img">
-            <img src="../image/最後的晚餐.jpg" alt="Artist Artwork">
-		</figure>
+        <div class="artist-main-img box">
+            <!-- <figure class="artist-artwork-img">
+                <img src="../image/最後的晚餐.jpg" alt="Artist Artwork">
+            </figure> -->
+    
+            <div class="artist-text">
+                <h2 class="artist-lebel">【作品故事】</h2>
+                <h1 class="artist-artwork-img-title">拉菲爾的《三女神》有什麼不同之處 ?</h1>
+            </div>
+        </div>
 
         <!-- 作品標題 -->
-        <section class="artist-artwork-header">
-            <figure class="artist-portrait"><img src="../image/達文西.jpeg" alt="Artist image"></figure>
-            <div>
-                <h2 class="artwork-name">最後的晚餐</h2>
-                <p class="artwork-header-label">1495-1498</p>
+        <section class="artist-artwork-header row">
+            <div class="col-12 col-lg-7 artwork-title">
+                <h2 class="artwork-name">優美三女神 The Three Graces</h2>
+                <p class="artwork-header-label">1504-1505</p>
                 <p class="artwork-header-location"><a href="https://maps.app.goo.gl/2Ne4qNaqAmM9pstn8" target="_blank">
-                    <i class="fas fa-map-marker-alt"></i> 義大利 米蘭  聖瑪利亞感恩修道院  (  Piazza Santa Maria delle Grazie, 2 Milan )</a>
+                    <i class="fas fa-map-marker-alt"></i> 法國 孔德博物館 (Musee Conde. Chantilly )</a>
                 </p>
             </div>
+
+            <ul class="artwork-info-list col-12 col-lg-5">
+                <li class="artwork-list-item">藝術家 : 拉斐爾 Raffaello Sanzio</li>
+                <li class="artwork-list-item">流派 : 文藝復興時期</li>
+                <li class="artwork-list-item">尺寸 : 17 x 17cm</li>
+            </ul>
         </section>
 
         <!-- 作品資訊 -->
-        <section class="artwork-info">
-            <ul class="artwork-info-list">
-                <li class="artwork-list-item">藝術家 : 達文西 Leonardo da Vinc</li>
-                <li class="artwork-list-item">流派 : 文藝復興時期</li>
-                <li class="artwork-list-item">尺寸 : 460 cm × 880 cm（181 in × 346 in）</li>
-            </ul>
+        <section class="box artwork-description-1">
+            <p class="artwork-description-centent">
+                《三女神》是拉菲爾最著名的畫作之一，也是最小的畫作之一。最重要的是，這是他繪製的第一批世俗作品之一。
+            </p>
+        </section>
 
-            <article class="artwork-description">
-                <h2 class="artwork-description-title">作品介紹</h2>
-                <p class="artwork-description-centent">
-                    高4.6米，寬8.8米，畫面利用透視原理，使觀眾感覺房間隨畫面作了自然延伸。為了構圖使徒坐得比正常就餐的距離更近，並且分成四組，
-                    在耶穌周圍形成波浪狀的層次。越靠近耶穌的門徒越顯得激動。耶穌坐在正中間，他攤開雙手鎮定自若，和周圍緊張的十二門徒形成鮮明的對比。
-                    耶穌背後的門外是祥和的外景，明亮的天空在他頭上彷彿一道光環。他的雙眼注視畫外，仿佛看穿了世間的一切炎涼。最後的晚餐的畫中窗外顯示
-                    是白天，因此被人列為疑點。《最後的晚餐》壁畫取材自基督教聖經馬太福音第26章，描繪耶穌在遭羅馬士兵逮捕的前夕和十二宗徒共進最後一餐
-                    時預言「你們其中一人將出賣我」後，門徒們顯得困惑、哀傷與騷動，紛紛詢問耶穌：「主啊，是我嗎？」的瞬間情景。唯有坐在耶穌右側（即畫面正
-                    方左邊第五位）的叛徒猶達斯（基督新教中文作猶大）驚慌地將身體往後傾，一手抓著出賣耶穌的酬勞——一個裝有三十塊銀幣的錢袋，臉部顯得陰暗。<br><br>
-
-                    據說達文西在繪作此圖時，所有人面孔皆已設想好，惟有加略人猶大未想好。當教堂神父來催達文西時，與其談到此問題，恰好該神父對其主教有點
-                    微詞，聽聞達文西欲用主教之臉當作猶大的臉孔，連聲同意，並開懷大笑。
-                </p>
-            </article>
+        <section class="box artwork-description-2">
+            <p class="artwork-description-centent">
+                這部作品的確切主題存在爭議，但傳統上被解讀為三位美惠女神的代表：阿格萊（Aglaé）（輝煌）、塔利斯（Thalis）（豐盛）和歐弗洛緒涅（快樂） ，特別是在這裡體現了愛、美麗和謙遜等女性特質。
+            </p>
         </section>
 
         <!-- 更多細節 -->
@@ -127,14 +150,97 @@
             </iframe>
         </section>
 
+        <section class="home-artist" id="artist">
 
-        
+			<div class="home-artist-title-text">
+				<h2 class="home-section-title">更多故事...</h2>
+				<p>別錯過這些精彩的故事</p>
+			</div>
+
+			<div class="home-artist-container slider slider-nav">
+                <div class="home-artist-box">
+					<a href="./artist1.html">
+						<figure class="home-artist-picture"><img src="../image/達文西.jpeg" alt="Picture of Leonardo da Vinc"></figure>
+						<p class="home-artist-lifespan">【作品故事】</p>
+						<h3 class="home-artist-name">  拉菲爾的《三女神》有什麼不同...</h3>
+					</a>	
+				</div>
+
+				<div class="home-artist-box">
+					<a href="./artist2.html">
+						<figure class="home-artist-picture"><img src="../image/米開朗基羅.jpg" alt="Picture of Leonardo da Vinc"></figure>
+						<p class="home-artist-lifespan">【作品故事】</p>
+						<h3 class="home-artist-name">  藏在《最後的晚餐》裡的冷知識...</h3>
+					</a>	
+				</div>
+
+				<div class="home-artist-box">
+					<a href="./artist3.html">
+						<figure class="home-artist-picture"><img src="../image/拉斐爾.jpg" alt="Picture of Leonardo da Vinc"></figure>
+						<p class="home-artist-lifespan">【藝術家】</p>
+						<h3 class="home-artist-name">  杜勒</h3>
+					</a>	
+				</div>
+
+				<div class="home-artist-box">
+					<a href="./artist3.html">
+						<figure class="home-artist-picture"><img src="../image/拉斐爾.jpg" alt="Picture of Leonardo da Vinc"></figure>
+						<p class="home-artist-lifespan">【作品故事】</p>
+						<h3 class="home-artist-name"> 帶你看懂達文西的《創造亞當》...</h3>
+					</a>	
+				</div>
+
+				<div class="home-artist-box">
+					<a href="./artist3.html">
+						<figure class="home-artist-picture"><img src="../image/拉斐爾.jpg" alt="Picture of Leonardo da Vinc"></figure>
+						<p class="home-artist-lifespan">【藝術家】</p>
+						<h3 class="home-artist-name">  波提切利</h3>
+					</a>	
+				</div>
+            </div>
+        </section>
+ 
     </main>
 
 
     <footer class="footer">
-        <p>&copy Copyrights Guide to Art Period</p>
-		<p>Contact Us: popopopoponnnn.com</p>
+		<!-- 更多資訊 -->
+		<section class="home-more-info container">
+			<ul class="home-info-list row">
+				<li class="home-info-list-item col-6 col-md-3">
+					<a class="home-info-icon" href="#"><img src="../image/info_icon_1.jpg" alt="Icon"></a>
+					<h3 class="home-info-title"><a href="#">更多展覽</a></h3>
+				</li>
+
+				<li class="home-info-list-item col-6 col-md-3">
+					<figure class="home-info-icon"><a href="#"><img src="../image/info_icon_2.jpg" alt="Icon"></a></figure>
+					<h3 class="home-info-title"><a href="#">認識畫家</a></h3>
+				</li>
+
+				<li class="home-info-list-item col-6 col-md-3">
+					<figure class="home-info-icon"><a href="#"><img src="../image/info_icon_3.jpg" alt="Icon"></a></figure>
+					<h3 class="home-info-title"><a href="#">名畫藝廊</a></h3>
+				</li>
+
+				<li class="home-info-list-item col-6 col-md-3">
+					<figure class="home-info-icon"><a href="#"><img src="../image/info_icon_4.png" alt="Icon"></a></figure>
+					<h3 class="home-info-title"><a href="#">常見問題</a></h3>
+				</li>
+			</ul>
+		</section>
+
+		<div class="footer-copyright container">
+			<div class="row">
+			  <div class="footer-text col-12 col-md-6">
+				<p class="">&copy; Copyrights Guide to Art Period</p>
+			  </div>
+			  <div class="footer-text col-12 col-md-6">
+				<p class="">Contact Us: popopopoponnnn.com</p>
+			  </div>
+			</div>
+			  
+		</div>
+		  
     </footer>
 
 	<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
