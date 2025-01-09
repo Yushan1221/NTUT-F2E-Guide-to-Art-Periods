@@ -66,7 +66,7 @@ hamburgerBtn.addEventListener("click", () => {
 
 // 點擊其他地方時關閉選單
 document.addEventListener("click", (event) => {
-  if (!menuContainer.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+  if (!searchContainer.contains(event.target) && !hamburgerBtn.contains(event.target)) {
     menuContainer.classList.remove("active");
   }
 });
