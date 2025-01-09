@@ -181,6 +181,7 @@ img {
 }
 
 .home-exhibition-Pillar {
+    display: block;
     position: absolute;
     height: 100%;
     z-index: 3;
@@ -192,6 +193,12 @@ img {
 
 .Pillar-right {
     right: 0px;
+}
+
+@media (max-width: 420px) {
+    .home-exhibition-Pillar {
+        display: none;
+    }
 }
 
 .home-exhibition .home-section-title {
