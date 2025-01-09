@@ -20,7 +20,7 @@
 
 .artist-main-img{
     height: 70vh;
-    background-image: url("../image/最後的晚餐.jpg"); /* 圖片路徑 */
+    background-image: url("../image/螢幕擷取畫面 2024-12-24 161319.jpg"); /* 圖片路徑 */
     position: relative;
 }
 
@@ -130,18 +130,30 @@ img {
 
 /* 作品資訊 */
 .artwork-description-1 {
-    background-image: url("../image/最後的晚餐.jpg");
+    background-image: url("../image/螢幕擷取畫面 2024-12-24 161319.jpg");
     height: 100vh;
     position: relative;
 }
 
 .artwork-description-2 {
-    background-image: url("../image/最後的晚餐.jpg");
+    background-image: url("../image/螢幕擷取畫面 2024-12-24 161319.jpg");
     height: 100vh;
     position: relative;
 }
 
+.artwork-description-3 {
+    background-image: url("../image/3特寫.jpg");
+    height: 100vh;
+    position: relative;
+}
 
+.artwork-description-4 {
+    background-image: url("../image/三女神.jpg");
+    background-size: contain; /* 讓圖片完全顯示，並保持比例 */
+    background-position: center; /* 讓圖片保持居中 */
+    height: 100vh; /* 使區塊高度佔滿螢幕高度 */
+    position: relative;
+}
 .artwork-info {
     display: flex;
     flex-direction: column;
@@ -223,6 +235,7 @@ img {
     grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
 }
+
 
 /* 文字說明樣式 */
 .artist-info p {
