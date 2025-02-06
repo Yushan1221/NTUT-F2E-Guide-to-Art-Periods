@@ -58,6 +58,7 @@ document.querySelectorAll('.exhibition-comment-box').forEach(box => {
 // 選取漢堡按鈕與選單容器
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const menuContainer = document.getElementById("menu-container");
+const hamburgerBtnState = document.querySelector(".ham6");
 
 // 點擊漢堡按鈕時切換選單的顯示與隱藏
 hamburgerBtn.addEventListener("click", () => {
@@ -68,6 +69,7 @@ hamburgerBtn.addEventListener("click", () => {
 document.addEventListener("click", (event) => {
   if (!searchContainer.contains(event.target) && !hamburgerBtn.contains(event.target)) {
     menuContainer.classList.remove("active");
+    hamburgerBtnState.classList.remove("active");
   }
 });
 
