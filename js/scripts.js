@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll("[data-target]").forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault(); // 防止鏈接的默認行為
-            const targetClass = link.dataset.target; // 使用 dataset 獲取值 
+            const targetClass = link.getAttribute("data-target"); // 使用 dataset 獲取值 
             scrollToSection(targetClass);
         });
     });

@@ -23,6 +23,15 @@ h2 {
     padding: 0;
 }
 
+a {
+    text-decoration: none; /* 移除底線 */
+    color: inherit; 
+}
+
+a:hover {
+    color: white; 
+}
+
 /* Header */
 .header {
     width: 100%;
